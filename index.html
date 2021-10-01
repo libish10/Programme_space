@@ -15,39 +15,39 @@
         <div id="filter_details">
             <p id="filter">Filters</p>
             <p id="year_filter">Year Filter</p>
-            <button id="clear_filter_1" class="clear_filter"><small>x clear filter</small></button>
+            <button id="clear_filter_1" class="clear_filter" onclick="hide_clear_filter(this.id)"><small>x clear filter</small></button>
             <hr class="hr-line">
             <div id="years">
-                <button class="year-detail" id="year_2006">2006</button>
-                <button class="year-detail" id="year_2007">2007</button>
-                <button class="year-detail" id="year_2008">2008</button>
-                <button class="year-detail" id="year_2009">2009</button>
-                <button class="year-detail" id="year_2010">2010</button>
-                <button class="year-detail" id="year_2011">2011</button>
-                <button class="year-detail" id="year_2012">2012</button>
-                <button class="year-detail" id="year_2013">2013</button>
-                <button class="year-detail" id="year_2014">2014</button>
-                <button class="year-detail" id="year_2015">2015</button>
-                <button class="year-detail" id="year_2016">2016</button>
-                <button class="year-detail" id="year_2017">2017</button>
-                <button class="year-detail" id="year_2018">2018</button>
-                <button class="year-detail" id="year_2019">2019</button>
-                <button class="year-detail" id="year_2020">2020</button>
+                <button class="year-detail" id="year_2006" onclick="display_year(2006,this.id)">2006</button>
+                <button class="year-detail" id="year_2007" onclick="display_year(2007,this.id)">2007</button>
+                <button class="year-detail" id="year_2008" onclick="display_year(2008,this.id)">2008</button>
+                <button class="year-detail" id="year_2009" onclick="display_year(2009,this.id)">2009</button>
+                <button class="year-detail" id="year_2010" onclick="display_year(2010,this.id)">2010</button>
+                <button class="year-detail" id="year_2011" onclick="display_year(2011,this.id)">2011</button>
+                <button class="year-detail" id="year_2012" onclick="display_year(2012,this.id)">2012</button>
+                <button class="year-detail" id="year_2013" onclick="display_year(2013,this.id)">2013</button>
+                <button class="year-detail" id="year_2014" onclick="display_year(2014,this.id)">2014</button>
+                <button class="year-detail" id="year_2015" onclick="display_year(2015,this.id)">2015</button>
+                <button class="year-detail" id="year_2016" onclick="display_year(2016,this.id)">2016</button>
+                <button class="year-detail" id="year_2017" onclick="display_year(2017,this.id)">2017</button>
+                <button class="year-detail" id="year_2018" onclick="display_year(2018,this.id)">2018</button>
+                <button class="year-detail" id="year_2019" onclick="display_year(2019,this.id)">2019</button>
+                <button class="year-detail" id="year_2020" onclick="display_year(2020,this.id)">2020</button>
             </div>
             <p id="Launch_success_filter">Launch Success Filter</p>
-            <button id="clear_filter_2" class="clear_filter"><small>x clear filter</small></button>
+            <button id="clear_filter_2" class="clear_filter" onclick="hide_clear_filter(this.id)"><small>x clear filter</small></button>
             <hr class="hr-line">
             <div id="launch_success_result">
-                <button class="launch-success-result-detail" id="true_launch_success">True</button>
-                <button class="launch-success-result-detail" id="false_launch_success">False</button>
+                <button class="launch-success-result-detail" id="true_launch_success" onclick="display_launch_success('true')">True</button>
+                <button class="launch-success-result-detail" id="false_launch_success" onclick="display_launch_success('false')">False</button>
 
             </div>
             <p id="Land_success_filter">Land Success Filter</p>
-            <button id="clear_filter_3" class="clear_filter"><small>x clear filter</small></button>
+            <button id="clear_filter_3" class="clear_filter" onclick="hide_clear_filter(this.id)"><small>x clear filter</small></button>
             <hr class="hr-line">
             <div id="land_success_result">
-                <button class="land-success-result-detail" id="true_land_success">True</button>
-                <button class="land-success-result-detail" id="false_land_success">False</button>
+                <button class="land-success-result-detail" id="true_land_success" onclick="display_land_success('true')">True</button>
+                <button class="land-success-result-detail" id="false_land_success" onclick="display_land_success('false')">False</button>
 
             </div>
         </div>
@@ -55,6 +55,8 @@
 
         </div>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>

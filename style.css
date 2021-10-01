@@ -45,6 +45,7 @@ body {
     bottom: 20px;
     left: 80px;
     display: none;
+    cursor: pointer;
 }
 
 .clear_filter:hover {
@@ -73,7 +74,8 @@ body {
 .year-detail {
     border-radius: 5px;
     background-color: rgba(7, 206, 7, 0.5);
-    border: none
+    border: none;
+    cursor: pointer;
 }
 
 #year_2020 {
@@ -93,6 +95,7 @@ body {
     bottom: 25px;
     left: 80px;
     display: none;
+    cursor: pointer;
 }
 
 #launch_success_result {
@@ -110,6 +113,7 @@ body {
     border-radius: 5px;
     background-color: rgba(7, 206, 7, 0.5);
     border: none;
+    cursor: pointer;
 }
 
 #Land_success_filter {
@@ -124,6 +128,7 @@ body {
     bottom: 25px;
     left: 80px;
     display: none;
+    cursor: pointer;
 }
 
 #land_success_result {
@@ -141,13 +146,60 @@ body {
     border-radius: 5px;
     background-color: rgba(7, 206, 7, 0.5);
     border: none;
+    cursor: pointer;
 }
 
 #space_launch_result {
     min-height: 600px;
     max-width: 72%;
-    border: 1px solid red;
     position: relative;
     left: 25%;
     top: -610px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px 40px;
+    justify-content: space-evenly;
+}
+
+.grid-item {
+    box-shadow: 5px 4px 6px white;
+    background-color: white;
+    border-radius: 5px;
+    width: 300px
+}
+
+.mission-image {
+    height: 200px;
+    width: 220px;
+    background-size: cover;
+    background-color: rgb(207, 206, 207);
+    margin: 20px;
+    position: relative;
+    left: 7%;
+}
+
+.mission-name {
+    text-align: center;
+    position: relative;
+    top: -20px;
+    color: rgb(46, 15, 221)
+}
+
+.list-container {
+    list-style-type: none;
+    position: relative;
+    top: -30px;
+}
+
+.list-container li {
+    padding: 10px 2px;
+}
+
+.mission-detail {
+    font-weight: bold;
+}
+
+.mission-detail-value {
+    font-weight: normal;
+    color: rgb(0, 0, 248)
 }
